@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'chessboard'
 
 def string_to_array(string)
@@ -6,8 +8,8 @@ def string_to_array(string)
   string.split(',').map(&:to_i)
 end
 
-puts 'This script shows the simplest path for a knight'
-puts 'to move from a given chessboard square to a destination'
+puts 'This script shows the simplest path for a knight to'
+puts 'move from a given chessboard square to a destination'
 
 loop do
   puts '------------------------------------------------'
@@ -18,7 +20,7 @@ loop do
     break if start
   end
   loop do
-    puts 'Enter a destination coordinate ( 1,1 through 8,8)'
+    puts 'Enter a destination coordinate ( 1,1 through 8,8 )'
     destination = string_to_array(gets.chomp)
     break if destination
   end
