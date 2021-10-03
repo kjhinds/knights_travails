@@ -16,7 +16,7 @@ class Chessboard
     knight = Knight.new(start)
     loop do
       history.push(knight)
-      break #if knight.position == destination 
+      break # if knight.position == destination
     end
     print_knight_moves
   end
